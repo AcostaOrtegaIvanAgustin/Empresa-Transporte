@@ -80,17 +80,17 @@ public class Viaje
             sw.WriteLine("IdentificacionViaje;Vehiculo;Choferes;KilometrajeRecorrido;CostoOperativoVehiculo;CostoSueldosChoferes;CostoTotal");
 
             
-            string nombresChoferes = string.Join(" / ", choferes.Select(c => c.Nombre));
+            /*string nombresChoferes = string.Join(" / ", choferes.Select(c => c.Nombre));
 
            
-            sw.WriteLine("{0};{1};{2};{3} km;{4};",	//*${6}*/${5};
+            sw.WriteLine("{0};{1};{2};{3} km;{4};",	//*${6}${5};
                 codigo,
                 vehiculo.Matricula,
                 nombresChoferes,
                 distancia,
                 Vehiculo.CalcularCostoOperativo()
                 // CalcularCostoTotal()
-               );
+               );*/
         }
 
         Console.WriteLine("¡Verificación exitosa! Se generó el archivo: {path}");}}

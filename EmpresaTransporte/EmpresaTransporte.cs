@@ -20,15 +20,28 @@ namespace EmpresaTransporte
 			this.nombre = nombre;
 			this.cuit = cuit;
 		}
+		public List<Chofer> Choferes
+		{
+    		get { return choferes; }
+		}
+
+		public List<Vehiculo> Vehiculos
+		{
+    		get { return vehiculos; }
+		}
+		public List<Viaje> Viajes
+		{
+    		get { return viajes; }
+		}
 		
 		public void RegistrarChofer(Chofer chofer)
-	{
-		choferes.Add(chofer);
-	}
+		{
+			choferes.Add(chofer);
+		}
 		public void RegistrarVehiculo(Vehiculo vehiculo)
-	{
-		vehiculos.Add(vehiculo);
-	}
+		{
+			vehiculos.Add(vehiculo);
+		}
 		public void PlanificarViaje(Viaje viaje)
 		{
 			viajes.Add(viaje);
@@ -55,7 +68,7 @@ namespace EmpresaTransporte
 		
 		public void ListarViajesDeVehiculo(){}
 		
-		public void GuadarDatos(){}
+		public void GuardarDatos(){}
 		
 		public void CargarDatos(){}
 			

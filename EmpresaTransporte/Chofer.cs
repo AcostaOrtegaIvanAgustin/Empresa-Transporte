@@ -10,7 +10,7 @@ public class Chofer
 		private DateTime fechaDeNacimiento;
 		private double sueldoBasico;
 		public List<Viaje> listaViajes;
-		public Chofer(string nombre, string direccion, string estadoCivil, int dni, DateTime fechaDeNacimiento, double sueldoBasico, List<Viaje> listaViajes)
+		public Chofer(string nombre, string direccion, string estadoCivil, int dni, DateTime fechaDeNacimiento, double sueldoBasico)
 		{
 			this.nombre=nombre;
 			this.direccion=direccion;
@@ -18,7 +18,9 @@ public class Chofer
 			this.dni=dni;
 			this.fechaDeNacimiento=fechaDeNacimiento;
 			this.sueldoBasico=sueldoBasico;
-			listaViajes = new List<Viaje>();
+		}
+		public string Nombre{
+			get{return nombre;}
 		}
 		public double SueldoBasico{
 			get{return sueldoBasico;}
